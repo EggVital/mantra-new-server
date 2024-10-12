@@ -167,26 +167,22 @@
 </section>  
 
 <div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <iframe src="https://calendar.google.com/calendar/embed?src=20caea078ff84f70811bdaf7da476422e7d211e1e7c1f798ebf379f30cc9fbec%40group.calendar.google.com&ctz=UTC" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=UTC&bgcolor=%23ffffff&src=MjBjYWVhMDc4ZmY4NGY3MDgxMWJkYWY3ZGE0NzY0MjJlN2QyMTFlMWU3YzFmNzk4ZWJmMzc5ZjMwY2M5ZmJlY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      <iframe src="" style="border:solid 1px #777" width="1300" height="600" frameborder="0" scrolling="no"></iframe>
+  <div class="col-lg-12" id="calendar">
+    
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=UTC&bgcolor=%23ffffff&mode=WEEK&title=Calendario%20mantra&src=MjBjYWVhMDc4ZmY4NGY3MDgxMWJkYWY3ZGE0NzY0MjJlN2QyMTFlMWU3YzFmNzk4ZWJmMzc5ZjMwY2M5ZmJlY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300" style="border:solid 1px #777" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
     </div>
-  </div>
+  
 </div>
 
-<iframe id="iframeId" width="800" height="600"></iframe>
-<script>
-// this demo shows the process of getting the html content 
-// from the link,and then apply it to the attribute "src" in the iframe
-$.get(link, function (response){ 
-var html = response;
-var html_src = 'https://humble-bunny-819.notion.site/11c0e43103cf80c6ada7dd54eba0f579?v=11c0e43103cf8121a46b000cf7dfc8ca&pvs=4,' + html;
-$("#iframeId").attr("src" , html_src);
-});
-</script>
-    
+
+
+
+
+
+
+  
+
+<!--
 
 <section>
   <div class="container">
@@ -214,7 +210,7 @@ $("#iframeId").attr("src" , html_src);
   </div>
   
 </section>
-
+-->
 
 
 <style>
@@ -266,7 +262,7 @@ $("#iframeId").attr("src" , html_src);
   }
   </style>
  
-  
+  <!--
   
   <h2>Responsive Image Gallery</h2>
   
@@ -315,7 +311,7 @@ $("#iframeId").attr("src" , html_src);
     <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
     <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
   </div>
-
+-->
 <section class="partners">
   <div class="container">
     <div class="row">
