@@ -1975,3 +1975,8 @@ body {
     moveHorizontal 16s 21.5s 1;
   animation-fill-mode: forwards;
 }
+
+
+#imagen{
+  border-radius: 10px;
+}
