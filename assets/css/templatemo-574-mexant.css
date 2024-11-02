@@ -1770,43 +1770,32 @@ body {
 
 
 
-/* Style all font awesome icons */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
+
 
 /* Set a specific color for each brand */
 
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
 
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
+.fa { 
+  border-radius:50px;
+  text-align:center;
+  font-size:40px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  width: 50%;
+  height: 100%;
+  align-items: center;
 }
 
 /* Instagram */
 .fa-instagram {
   background: #FD09B8;
   color: white;
+
 }
 
-/* Whastapp */
 .fa-whatsapp {
-  background: #53CE60;
+  background: #25d366;
   color: white;
 }
 
