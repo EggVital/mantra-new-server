@@ -1169,6 +1169,7 @@ partners
 */
 
 section.partners {
+  text-align: center;
   background-color: #004F6E;
   padding: 80px 0px;
 }
