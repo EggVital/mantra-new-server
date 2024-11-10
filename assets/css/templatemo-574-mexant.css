@@ -93,10 +93,16 @@ a {
   text-decoration: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   margin-top: 0px;
   margin-bottom: 0px;
   color: #004F6E;
+}
+
+h6{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #000;
 }
 
 ul {
@@ -1774,33 +1780,15 @@ body {
 
 
 
-/* Set a specific color for each brand */
+/* adjut the zise of the social icons */
 
 
-.fa { 
-  border-radius:50px;
-  text-align:center;
-  font-size:40px;
-  box-shadow: 2px 2px 3px #999;
-  z-index:100;
-  width: 50%;
-  height: 70%;
-  align-items: center;
+
+
+.socialimg img{
+  width: 50px;
+  height: 50px;
 }
-
-/* Instagram */
-.fa-instagram {
-  background: #FD09B8;
-  color: white;
-
-}
-
-.fa-whatsapp {
-  background: #25d366;
-  color: white;
-}
-
-
 
 
 
