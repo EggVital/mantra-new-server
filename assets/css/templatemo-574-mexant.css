@@ -580,6 +580,22 @@ header
 }
 
 @media (max-width: 767px) {
+
+
+
+  h2 {
+    font-size: 2em !important;/* Smaller size for mobile */
+}
+
+.green-button {
+    padding: 8px 16px!important; /* Smaller padding for green button */
+    font-size: 0.9em!important; /* Smaller font size */
+}
+
+.orange-button {
+    padding: 8px 16px; /* Smaller padding for orange button */
+    font-size: 0.9em; /* Smaller font size */
+}
   .header-area .main-nav .logo {
     color: #1e1e1e;
   }
@@ -795,7 +811,7 @@ banner
 .slide-inner .header-text .buttons .green-button {
   display: inline;
   float: left;
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -1329,7 +1345,11 @@ section.what-we-do {
 
 .what-we-do .right-items .item {
   border-radius: 5px;
-  padding: 40px 30px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   position: relative;
@@ -1996,5 +2016,32 @@ body {
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+  .about-us#about {
+      display: none;
+  }
+}
+
+
+
+/* botones contacot cada profesional no se colpsan */
+@media only screen and (max-width: 991px) {
+  .container .row .col-12 {
+      padding-left: 0; /* Elimina el padding-left en dispositivos móviles */
+      padding-right: 0; /* Opcional: Elimina el padding-right también */
+  }
+}
+
+
+@media (min-width: 992px) {
+  .service-details {
+      display: none; /* Oculta la sección en pantallas más grandes */
   }
 }
