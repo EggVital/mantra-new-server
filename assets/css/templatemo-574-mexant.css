@@ -2045,3 +2045,9 @@ body {
       display: none; /* Oculta la sección en pantallas más grandes */
   }
 }
+
+.img-service{
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 5px;
+}
