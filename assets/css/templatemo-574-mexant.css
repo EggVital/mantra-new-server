@@ -2032,7 +2032,7 @@ body {
 
 
 /* botones contacot cada profesional no se colpsan */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   .container .row .col-12 {
       padding-left: 0; /* Elimina el padding-left en dispositivos móviles */
       padding-right: 0; /* Opcional: Elimina el padding-right también */
@@ -2045,6 +2045,8 @@ body {
       display: none; /* Oculta la sección en pantallas más grandes */
   }
 }
+
+
 
 .img-service{
   width: 120px !important;
