@@ -1684,6 +1684,7 @@ body {
     margin-right: 15px;
     font-size: 15px;
     padding: 15px 20px;
+ 
   }
   section.about-us .right-content {
     margin-left: 0px;
@@ -2053,3 +2054,67 @@ body {
   height: 120px !important;
   border-radius: 5px;
 }
+
+
+
+
+
+@media (max-width: 992px) {
+  .menu div {
+      margin-bottom: 10px !important; /* Ajusta el valor según el espaciado que desees */
+  }
+
+  .menu div:last-child {
+      margin-bottom: 0 !important; /* Elimina el margen del último elemento */
+  }
+}
+
+
+
+.banner-carousel {
+  position: relative;
+  max-width: 100%; /* Ajusta según sea necesario */
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  min-width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+
+
+
+.simple-cta {
+   /* o absolute si es necesario */
+  top: 0; /* Ajusta según sea necesario */
+  left: 0; /* Ajusta según sea necesario */
+  z-index: 9999; /* Asegúrate de que sea mayor que otros elementos */
+}
+
+.service-details {
+  z-index: 1; /* Asegúrate de que sea menor que simple-cta */
+}
+

@@ -389,7 +389,18 @@ margin-top:0px;
                   <li>
                     <div>
                       <div class="left-image">
-                        <img src="/assets/images/mantra/espacios/Shanta/Shanta.JPG" alt="Consultorios y Oficinas">
+                        <div class="banner-carousel">
+                          <div class="carousel-images">
+                              <div class="carousel-image">
+                                  <img src="/assets/images/mantra/espacios/Shanta/Shanta.JPG" alt="Consultorios y Oficinas">
+                              </div>
+                              <div class="carousel-image">
+                                  <img src="/assets/images/iCloud Photos/IMG_0768.JPEG" alt="Consultorios y Oficinas">
+                              </div>
+                          </div>
+                          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                      </div>
                       </div>
                       <div class="right-content">
                         <h4>Consultorios y Oficinas</h4>
@@ -423,6 +434,7 @@ margin-top:0px;
     </div>  
   </div>
 </section>
+
 
 <section class="simple-cta">
   <div class="container">
@@ -572,6 +584,7 @@ margin-top:0px;
   </section>
 -->
 
+
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
@@ -659,6 +672,25 @@ margin-top:0px;
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
+      document.querySelectorAll('.gradient-border').forEach(button => {
+    button.addEventListener('click', () => {
+        // Verificar si ya hay saltos de línea insertados para evitar duplicados
+        const existingBreaks = document.querySelector('.line-breaks');
+        if (!existingBreaks) {
+            // Crear un nuevo div que contenga los saltos de línea
+            const lineBreaks = document.createElement('div');
+            lineBreaks.className = 'line-breaks'; // Añadir una clase para identificarlo
+            lineBreaks.innerHTML = '<br>'.repeat(40); // Generar 30 saltos de línea
+
+            // Insertar el nuevo div justo antes de la sección simple-cta
+            const simpleCta = document.querySelector('.simple-cta');
+            simpleCta.parentNode.insertBefore(lineBreaks, simpleCta);
+        }
+    });
+});
+    </script>
+      
+    <script>
         var interleaveOffset = 0.5;
 
       var swiperOptions = {
@@ -702,5 +734,32 @@ margin-top:0px;
 
       var swiper = new Swiper(".swiper-container", swiperOptions);
     </script>
+
+
+<script>
+  let currentSlide = 0; // Índice de la imagen actual
+
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.carousel-image');
+    const totalSlides = slides.length;
+
+    // Actualiza el índice de la imagen actual
+    currentSlide += direction;
+
+    // Si el índice es menor que 0, volver al último slide
+    if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    }
+    // Si el índice es mayor o igual al total de slides, volver al primero
+    else if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    }
+
+    // Mueve el carrusel
+    const carouselImages = document.querySelector('.carousel-images');
+    const offset = -currentSlide * 100; // Calcular el desplazamiento
+    carouselImages.style.transform = `translateX(${offset}%)`;
+}
+</script>
   </body>
 </html>
