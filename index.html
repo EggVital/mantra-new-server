@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="/assets/images/logo.ico" type="image/x-icon">
     <title>Mantra Cooworking</title>
 
     <!-- Bootstrap core CSS -->
@@ -673,21 +673,24 @@ margin-top:0px;
     <script src="assets/js/custom.js"></script>
     <script>
       document.querySelectorAll('.gradient-border').forEach(button => {
-    button.addEventListener('click', () => {
-        // Verificar si ya hay saltos de línea insertados para evitar duplicados
-        const existingBreaks = document.querySelector('.line-breaks');
-        if (!existingBreaks) {
-            // Crear un nuevo div que contenga los saltos de línea
-            const lineBreaks = document.createElement('div');
-            lineBreaks.className = 'line-breaks'; // Añadir una clase para identificarlo
-            lineBreaks.innerHTML = '<br>'.repeat(40); // Generar 30 saltos de línea
-
-            // Insertar el nuevo div justo antes de la sección simple-cta
-            const simpleCta = document.querySelector('.simple-cta');
-            simpleCta.parentNode.insertBefore(lineBreaks, simpleCta);
-        }
-    });
-});
+        button.addEventListener('click', () => {
+          const mediaQuery = window.matchMedia('(max-width: 992px)');
+          if (mediaQuery.matches) {
+            // Verificar si ya hay saltos de línea insertados para evitar duplicados
+            const existingBreaks = document.querySelector('.line-breaks');
+            if (!existingBreaks) {
+              // Crear un nuevo div que contenga los saltos de línea
+              const lineBreaks = document.createElement('div');
+              lineBreaks.className = 'line-breaks'; // Añadir una clase para identificarlo
+              lineBreaks.innerHTML = '<br>'.repeat(37); // Generar 30 saltos de línea
+    
+              // Insertar el nuevo div justo antes de la sección simple-cta
+              const simpleCta = document.querySelector('.simple-cta');
+              simpleCta.parentNode.insertBefore(lineBreaks, simpleCta);
+            }
+          }
+        });
+      });
     </script>
       
     <script>
